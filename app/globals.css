@@ -1,0 +1,4 @@
+@tailwind base;/* Global Styles */
+@tailwind components;/* Predesigned Components*/
+@tailwind utilities;/* Small utitlity classes */
+
