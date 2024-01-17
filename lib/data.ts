@@ -10,6 +10,7 @@ export const links = [
   {
     name: "Home",
     hash: "#home",
+    
   },
   {
     name: "About",
@@ -24,14 +25,14 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
     name: "Contact",
     hash: "#contact",
   },
-] as const;
+] as const;//as const in Typescript makes the value read-only mamke it non prone to accidental changes
+           //which is kind of enum or final variable in Java
+
+
+
 
 export const experiencesData = [
   {
