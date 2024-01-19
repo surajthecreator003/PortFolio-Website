@@ -7,12 +7,17 @@ import Link from 'next/link';
 import {BsArrowRight, BsLinkedin} from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from 'react-icons/fa';
+import { useSectionInView } from '@/lib/hooks';
 
 
 //this Intro component will contain the Image and the Intro text
 export default function Intro() {
+
+
+const {ref}=useSectionInView("Home",0.5);
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section ref={ref} className=" mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
 
         <div className="flex items-center justify-center">
           <div className="relative">
@@ -35,7 +40,7 @@ export default function Intro() {
          </div>
         </div>
 
-        <motion.p
+        <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -46,7 +51,7 @@ export default function Intro() {
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">Node js,Express.js,MongoDB,PostgreSQL,</span>{" "}
         <span className="underline">React.js,Next.js,Java,AWS,Git,GitHub,Docker</span>.
-      </motion.p>
+      </motion.h1>
 
 
 

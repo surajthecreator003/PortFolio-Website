@@ -6,6 +6,9 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
+
+
+//links will be used to navigate to different sections of the page
 export const links = [
   {
     name: "Home",
@@ -34,6 +37,7 @@ export const links = [
 
 
 
+//Add this if you have experience section
 export const experiencesData = [
   {
     title: "Graduated bootcamp",
@@ -61,6 +65,9 @@ export const experiencesData = [
   },
 ] as const;
 
+
+
+//Here are the Projects we wnat to display
 export const projectsData = [
   {
     title: "CorpComment",
@@ -85,6 +92,8 @@ export const projectsData = [
   },
 ] as const;
 
+
+//this wil be used in skills section
 export const skillsData = [
   "HTML",
   "CSS",
@@ -106,3 +115,7 @@ export const skillsData = [
   "Django",
   "Framer Motion",
 ] as const;
+
+
+//using as const only didnt make sense only as we are just mapping data only not performing 
+//any operation on it ut still good to practise...

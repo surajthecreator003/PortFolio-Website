@@ -4,13 +4,18 @@ import React from 'react';
 import {motion} from "framer-motion"
 import {links} from "@/lib/data";
 import Link from 'next/link';
+import clsx from "clsx";//used to give dynamic classes depending on condition without conflicting with the class name
+import {useActiveSectionContext } from '@/context/active-section-context';
 
 
 
+const Header = () => {
 
 
+  const {activeSection,setActiveSection,setTimeOfLastClick}=useActiveSectionContext();
+  
+  
 
-const header = () => {
   return (
     <header className="z-[999] relative">
 
@@ -42,11 +47,19 @@ const header = () => {
                 >
 
                     <Link 
-                    className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300"
+                    className={clsx(
+                      " relative flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
+                      {
+                        "text-gray-950 dark:text-gray-200":
+                          activeSection === link.name,
+                      }
+                    )}
                     href={link.hash}
+                    onClick={() => {setActiveSection(link.name);setTimeOfLastClick(Date.now())}}
                     >
 
                     {link.name}
+                    {link.name === activeSection && (<motion.span layoutId="activeSection" transition={{type:"spring",stiffness:380,damping:30}} className="bg-gray-100 rounded-full absolute inset-0 -z-10"></motion.span>)}
                     
                     </Link>
 
@@ -70,4 +83,6 @@ const header = () => {
 
 //and remember framermotion components uses useEffect inside them so we need to use "use client"
 //as its a client  component
-export default header
+export default Header
+
+//motion.span adds motion effects to the span tag
