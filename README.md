@@ -15,3 +15,5 @@ Features implemented till now..
 - cslx class usage for rendeering tailwind css classes dynamically
 
 - react-intersection-observer for finding out the current view in the screen and using it to update the context state,so when scrolled to that particular section the css of the nav/header automatically changes
+
+- Skills have a bounce effect whenver you load the site
