@@ -5,9 +5,9 @@ import type { SectionName } from "./types";//this "type" is part of javascript a
 //like a javscript value
 
 
-//this function will help in dinding out which component is in the view of the screen and then
+//this function will help in finding out which component is in the view of the screen and then
 //will set the active section accordingly for which the css will change
-export function useSectionInView(sectionName: SectionName, threshold = 0.75) {//the default hreshold is 0.75 which is like 75% of screen
+export function useSectionInView(sectionName: SectionName, threshold = 0.75) {//the default threshold is 0.75 which is like 75% of screen
   const { ref, inView } = useInView({
     threshold,
   });

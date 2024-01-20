@@ -53,7 +53,7 @@ export default function Project({title,description,tags,imageUrl}:ProjectProps) 
       <section className="mb-3 sm:mb-8 
                           
                           bg-gray-100 max-w-[42rem] 
-                          border border-black/5 rounded-lg 
+                          border borderBlack/5 rounded-lg 
                           overflow-hidden sm:pr-8 
                           relative sm:h-[20rem]
                           hover:bg-gray-200 

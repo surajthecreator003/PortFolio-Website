@@ -18,9 +18,9 @@ export const ActiveSectionContext=createContext<ActiveSectionContexttype | null>
 //wrappinig the conext provider around the children component and then exporting it
 const ActiveSectionContextProvider = ({children}:ActiveSectionContextProviderProps) => {
 
-  const [activeSection,setActiveSection]=useState<SectionName>("Home")
+  const [activeSection,setActiveSection]=useState<SectionName>("Home")//as initially the home section is active when the page loads
 
-  //this will solve the css problem of gliding from end to strt or vice versa when clicked on nav elements far from each other
+  //this will solve the css problem of gliding from end to start or vice versa when clicked on nav elements far from each other
   const [timeOfLastClick,setTimeOfLastClick]=useState(0)
 
 
