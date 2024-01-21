@@ -9,6 +9,7 @@ import ActiveSectionContextProvider from '@/context/active-section-context';
 import ThemeContextProvider from "@/context/theme-context";
 
 import { Toaster } from "react-hot-toast";
+import ThemeSwitch from '@/components/theme-switch';//for toggling dark and Light mode
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -43,6 +44,7 @@ export default function RootLayout({
         <Header/>
         {children} 
         <Toaster position="top-right" />
+        <ThemeSwitch/>
       </ActiveSectionContextProvider>
       </ThemeContextProvider>
 

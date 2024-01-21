@@ -50,17 +50,13 @@ export default function Project({title,description,tags,imageUrl}:ProjectProps) 
                   opacity: opacityProgess,
                       }}>
       
-      <section className="mb-3 sm:mb-8 
-                          
-                          bg-gray-100 max-w-[42rem] 
-                          border borderBlack/5 rounded-lg 
-                          overflow-hidden sm:pr-8 
-                          relative sm:h-[20rem]
-                          hover:bg-gray-200 
+      <section className="bg-gray-100 max-w-[42rem] 
+                          border border-black/5 rounded-lg
+                          overflow-hidden sm:pr-8 relative sm:h-[20rem]
 
-                          transition sm:group-even:pl-8 
-                          dark:text-white dark:bg-white/10 
-                          dark:hover:bg-white/20 "
+                        hover:bg-gray-200 transition 
+                          sm:group-even:pl-8
+                          dark:text-white dark:bg-white/10 dark:hover:bg-white/20"
                           > 
   
       {/* Will represent each Project to be shown */}

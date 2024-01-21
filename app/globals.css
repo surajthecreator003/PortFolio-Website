@@ -2,15 +2,20 @@
 @tailwind components;/* Predesigned Components*/
 @tailwind utilities;/* Small utitlity classes */
 
+
+
+/* Line color prop of VerticalTimeline Component */
+/* As its a 3rd party Component so we have to set it manually*/
 html {
     --line-color: #e5e7eb;
-  }
+  }/* Will change the line color to white when light mode is on */
   
   html.dark {
     --line-color: rgba(255, 255, 255, 0.2);
-  }
+  }/* will change the line color to slightly gray in the react-vertical-timeline-component
+      when toogled to dark mode*/
   
   .borderBlack {
     @apply border border-black/10;
   }/* will just highlight border as black if the theme is white in the 
-       Contact Component*/
+       Contact Component and other component*/

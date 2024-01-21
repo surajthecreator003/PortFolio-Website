@@ -5,6 +5,7 @@ import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import Certification from "@/components/certification";
 import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 
 
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Skills />
       <Certification/>
       <Contact />
+      <Footer/>
     </main>
   )
 }

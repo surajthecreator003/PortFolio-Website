@@ -15,4 +15,12 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode:"class"//setting this removes external influence of System preference color settings
+  
 }
+
+
+//tailwind is picking up color from system and is ceating discolor on 
+//dark and light mode
+//as By default, Tailwind CSS supports the automatic application of dark mode styles based on 
+//the user's system preferences (e.g., operating system dark mode settings).
