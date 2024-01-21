@@ -1,5 +1,5 @@
-import React from "react";
 
+import React from "react";
 
 //enable if using experience section
 // import { CgWorkAlt } from "react-icons/cg";
@@ -7,9 +7,10 @@ import React from "react";
 // import { LuGraduationCap } from "react-icons/lu";
 
 
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+
+import portfolioapp from "@/public/portfolioapp.png";
+import talkative from "@/public/talkative.png";
+import netflixgpt from "@/public/netflixgpt.png";
 
 import { Cloud, Laptop2 } from "lucide-react";//for Cloud and laptop Icons
 
@@ -103,51 +104,39 @@ export const certificationsData = [
 
 //Here are the Projects we wnat to display
 export const projectsData = [
+
   {
-    title: "CorpComment",
+    title: "Talk-A-Tive",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A Full-Stack MERN Chat app with features like Single/Group Chat, Real-Time Typing Indicator,Notification Bar,Group Member-Add/Remove/Admin.",
+    tags: ["Socket.IO","Cloudinary","JWT","Chakra UI","axios","Context-API","Render-Deploy"],
+    imageUrl: talkative,
+    link : "https://talk-a-tive-nri4.onrender.com"
+  },
+
+  {
+    title: "NetFlix GPT",
+    description:
+      "A NetFlix Frontend Clone where users can get custom movie recommendation",
+    tags: ["React.js", "Firebase", "OpenAi APi", "Tailwind CSS","Redux ToolKit","TMDB API","Vercel-Deploy"],
+    imageUrl: netflixgpt,
+    link:"https://net-flix-21em5rvw1-surajthecreator003.vercel.app/"
   },
   {
-    title: "rmtDev",
+    title: "Portfolio Website",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      " implemented Framer Motion for Amazing Animations and has features like Dark Mode,Sending Email ",
+    tags: [ "Next.js","React.js","TypeScript", "RESEND for email", "Tailwind CSS", "Framer MOtion","Vercel-Deploy"],
+    imageUrl: portfolioapp,
+    link:"https://port-folio-website-hkvlzfwnp-surajthecreator003.vercel.app/"
   },
 ] as const;
 
 
 //this wil be used in skills section
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Node.js","Express.js","Mongo DB","Next.js","Postgre SQL","React JS","JavaScript","TypeScript","Java","Docker","HTML","CSS","Tailwind CSS",
+  "AWS","Git","Git Hub","Redux ToolKit","Framer Motion","Chakra UI","FireBase","Linux"
 ] as const;
 
 

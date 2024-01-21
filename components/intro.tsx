@@ -10,6 +10,7 @@ import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 
 
+
 //this Intro component will contain the Image and the Intro text
 export default function Intro() {
 
@@ -49,7 +50,7 @@ const {ref}=useSectionInView("Home",0.5);
         <span className="font-bold">Full-Stack Developer.</span>{" "}
          I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">Node js,Express.js,MongoDB,PostgreSQL,</span>{" "}
+        <span className="underline">Node js,Express.js,Mongo DB,PostgreSQL,</span>{" "}
         <span className="underline">React.js,Next.js,Java,AWS,Git,GitHub,Docker</span>.
       </motion.h1>
 
