@@ -18,6 +18,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: "Portfolio | Suraj Mallick",
   description: ' Suraj Mallick is a Full Stack Devloper and a CSE Student at Centurion University of Technology and Management',//this will appear on google search description
+  icons: {icon: '/icon.png'}
 }
 
 export default function RootLayout({
